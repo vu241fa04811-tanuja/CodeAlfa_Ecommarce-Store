@@ -5,9 +5,11 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
   const password = document.getElementById("loginPassword").value;
 
   try {
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch("https://ecommerce-store-6170.onrender.com/api/auth/login", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({ email, password })
     });
 
@@ -21,7 +23,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
       alert(data.message);
     }
   } catch (error) {
-    console.error(error);
+    console.error("Login Error:", error);
     alert("Something went wrong");
   }
 });
