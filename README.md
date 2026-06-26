@@ -1,6 +1,6 @@
 # 🛒 E-Commerce Store
 
-**Task 2 | CodeAlpha Virtual Internship**
+**Task 1 | CodeAlpha Virtual Internship**
 
 E-Commerce Store is a responsive web application that allows users to browse products, add items to the cart, and experience a simple online shopping platform.
 
